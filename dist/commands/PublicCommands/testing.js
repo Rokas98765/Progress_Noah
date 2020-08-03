@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const http_1 = require("http");
+const fs_1 = require("fs");
+const fileStream = fs_1.createWriteStream('./file2.png');
+const req = http_1.request({
+    host: 'emergency.nofap.com',
+    path: '/director.php?cat=em&religious=false',
+    method: 'GET',
+}, response => {
+    response.pipe(fileStream);
+});
+req.end();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdGluZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb21tYW5kcy9QdWJsaWNDb21tYW5kcy90ZXN0aW5nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsK0JBQStCO0FBQy9CLDJCQUF1QztBQUV2QyxNQUFNLFVBQVUsR0FBRyxzQkFBaUIsQ0FBQyxhQUFhLENBQUMsQ0FBQztBQUVwRCxNQUFNLEdBQUcsR0FBRyxjQUFPLENBQ2Y7SUFDSSxJQUFJLEVBQUUscUJBQXFCO0lBQzNCLElBQUksRUFBRSxzQ0FBc0M7SUFDNUMsTUFBTSxFQUFFLEtBQUs7Q0FDaEIsRUFDRCxRQUFRLENBQUMsRUFBRTtJQUNQLFFBQVEsQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7QUFDOUIsQ0FBQyxDQUNKLENBQUM7QUFFRixHQUFHLENBQUMsR0FBRyxFQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyByZXF1ZXN0IH0gZnJvbSAnaHR0cCc7XHJcbmltcG9ydCB7IGNyZWF0ZVdyaXRlU3RyZWFtIH0gZnJvbSAnZnMnO1xyXG5cclxuY29uc3QgZmlsZVN0cmVhbSA9IGNyZWF0ZVdyaXRlU3RyZWFtKCcuL2ZpbGUyLnBuZycpO1xyXG5cclxuY29uc3QgcmVxID0gcmVxdWVzdChcclxuICAgIHtcclxuICAgICAgICBob3N0OiAnZW1lcmdlbmN5Lm5vZmFwLmNvbScsXHJcbiAgICAgICAgcGF0aDogJy9kaXJlY3Rvci5waHA/Y2F0PWVtJnJlbGlnaW91cz1mYWxzZScsXHJcbiAgICAgICAgbWV0aG9kOiAnR0VUJyxcclxuICAgIH0sXHJcbiAgICByZXNwb25zZSA9PiB7XHJcbiAgICAgICAgcmVzcG9uc2UucGlwZShmaWxlU3RyZWFtKTtcclxuICAgIH1cclxuKTtcclxuXHJcbnJlcS5lbmQoKTtcclxuXHJcbiJdfQ==
